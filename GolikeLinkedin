@@ -609,9 +609,7 @@ def LINKEDIN():
                     print(checkurl2['message'])
                     countdown(15)
 
-def banner():
- os.system("cls" if os.name == "nt" else "clear")
- banner = f"""
+banner = f"""
 \033[1;35m██╗  ██╗██████╗    ████████╗ ██████╗  ██████╗ ██╗
 \033[1;31m██║  ██║██╔══██╗   ╚══██╔══╝██╔═══██╗██╔═══██╗██║
 \033[1;36m███████║██████╔╝█████╗██║   ██║   ██║██║   ██║██║
@@ -625,10 +623,11 @@ def banner():
 \033[1;97m[\033[1;91m<>\033[1;97m]\033[1;32m ADMIN\033[1;31m : \033[1;33mHOANGPHUC
 \033[97m════════════════════════════════════════════════  
 """
-for X in banner:
-  sys.stdout.write(X)
-  sys.stdout.flush() 
-  sleep(0.00125)
+os.system("clear")
+for x in banner:
+  print(x,end = "")
+  sleep(0.001)
+
 
 def LIST():
     banner()
