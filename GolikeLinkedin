@@ -28,7 +28,7 @@ def countdown(time_sec):
                 "\033[1;31mN\033[1;37mH\033[1;36mP\033[1;33mT\033[1;35mO\033[1;32mO\033[1;34mL\033[1;37m🍑 - Tool\033[1;33m Vip \033[1;31m\033[1;32m",
              ]
             for color in colors:
-            print(f"\r{color}|{remaining_time}| \033[1;31m", end="")
+                print(f"\r{color}|{remaining_time}| \033[1;31m", end="")
             time.sleep(0.12)
                                   
     print("\r                          \r", end="") 
