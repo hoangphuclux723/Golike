@@ -932,7 +932,7 @@ if checkurl1['status']== 200 :
         print(Fore.RED+'_________________________________________________________')
         LIST()
         print(Fore.RED+'Nhập 2 Để Xóa Authorization Hiện Tại')
-        choose = int(input(Fore.WHITE+'Nhập Lựa Chọn : '))
+        choose = input(Fore.WHITE+'Nhập Lựa Chọn: ').strip()
         if choose == 1:
             os.system('cls' if os.name== 'nt' else 'clear')
             banner()
